@@ -1,0 +1,74 @@
+print(" Menu \n"
+      "A. Sabaw -10\n"
+      "B. Kanin -10\n"
+      "C. Kaldereta - 25 \n"
+      "D. Batchoy -30 \n")
+total = 0
+
+while True:
+    order=input(" What is your order?")
+    if order == 'A':
+        print(" Your order is ", order)
+        total = total + 10
+        print(" The total of your order is",total)
+        add=input(" Do you have additional order?")
+        if add == 'Yes':
+            print(" Menu \n"
+                  "A. Sabaw -10\n"
+                  "B. Kanin -10\n"
+                  "C. Kaldereta - 25 \n"
+                  "D. Batchoy -30 \n")
+
+        elif add == 'No':
+            print(" No additional order, enjoy!")
+            break
+
+    if order == "B":
+        print(" Your order is ", order)
+        add = input(" Do you have additional order?")
+        total = total + 10
+        print(" The total of your order is", total)
+        if add == 'Yes':
+            menu = (" Menu \n"
+                    "A. Sabaw -10\n"
+                    "B. Kanin -10\n"
+                    "C. Kaldereta - 25 \n"
+                    "D. Batchoy -30 \n")
+
+            print(menu)
+        elif add == 'No':
+            print(" No additional order, enjoy!")
+            break
+
+    if order == "C":
+        print(" Your order is ", order)
+        total = total + 25
+        print(" The total of your order is", total)
+        add = input(" Do you have additional order?")
+        if add == 'Yes':
+            menu = (" Menu \n"
+                    "A. Sabaw -10\n"
+                    "B. Kanin -10\n"
+                    "C. Kaldereta - 25 \n"
+                    "D. Batchoy -30 \n")
+            print(menu)
+        elif add == 'No':
+            print(" No additional order, enjoy!")
+            break
+
+    if order == "D":
+        print(" Your order is ", order)
+        add = input(" Do you have additional order?")
+        total = total + 30
+        print(" The total of your order is", total)
+        if add == 'Yes':
+            menu = (" Menu \n"
+                    "A. Sabaw -10\n"
+                    "B. Kanin -10\n"
+                    "C. Kaldereta - 25 \n"
+                    "D. Batchoy -30 \n")
+            print(menu)
+        elif add == 'No':
+            print(" The total of your order is",total)
+            print(" No additional order, enjoy!")
+            break
